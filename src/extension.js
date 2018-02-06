@@ -15,7 +15,7 @@ function init() {
 function enable() {
     gesture.connect('activated', Lang.bind(this, function() {
             Main.keyboard._keyboardRequested = true;
-            Main.keyboard._keyboardVisible = false;
+            Main.keyboard._keyboardVisible = true;
             Main.keyboard.Show(global.get_current_time());
         }));
         global.stage.add_action(gesture);
